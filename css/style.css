@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+}
+
+.perfil{
+    background-color: black;
+    display: flex;     
+    flex-direction: column;     
+    flex-wrap: wrap;     
+    justify-content: flex-start;     
+    align-items: center;     
+    height: 110vh;     
+    width: fit-content;        
+    float:left;     
+    color: aliceblue;
+}
+
+.perfil img{
+    margin: 30px;
+    flex-wrap: wrap;
+    width: 250px;
+    border-radius: 50%;
+}
+
+#organization{
+    display: flex;
+    height: 100vh;
+}
+
+#conteudo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: aqua ;
+    padding: 50px;
+}
+
+#informacoes{
+    background-color: brown;
+    padding: 100px;
+}
+
+#trajetoria{
+    background-color: blueviolet;
+    padding: 100px;
+}
+
+#networking{
+    background-color: forestgreen;
+    padding:100px;
+}
+

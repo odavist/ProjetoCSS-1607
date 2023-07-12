@@ -2,8 +2,14 @@
     margin: 0;
 }
 
+body ul{
+    list-style: none;
+    
+}
+
 .perfil{
-    background-color: black;
+    background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,45,45,0.4537464644060749) 100%);
     display: flex;     
     flex-direction: column;     
     flex-wrap: wrap;     
@@ -12,7 +18,7 @@
     height: 110vh;     
     width: fit-content;        
     float:left;     
-    color: aliceblue;
+    color: white;
 }
 
 .perfil img{
@@ -24,30 +30,47 @@
 
 #organization{
     display: flex;
-    height: 100vh;
+    
 }
 
 #conteudo{
+    background-color: #7b58af;
+background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23faf7ff' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: aqua ;
-    padding: 50px;
+    padding-inline-start: 50px;
+    color: white;
+}
+
+#image{
+    width: 50px;
+    
+    
 }
 
 #informacoes{
-    background-color: brown;
+    background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,45,45,0.4537464644060749) 100%);
     padding: 100px;
+    border-radius: 20px;
+
 }
 
 #trajetoria{
-    background-color: blueviolet;
+    background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,45,45,0.4537464644060749) 100%);
     padding: 100px;
+    border-radius: 20px;
 }
 
 #networking{
-    background-color: forestgreen;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,45,45,0.4537464644060749) 100%);
     padding:100px;
+    border-radius: 20px;
+    
 }
+
 

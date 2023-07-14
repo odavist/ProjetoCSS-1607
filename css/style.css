@@ -10,7 +10,9 @@ body{
     display: flex;
     flex-direction: row;
     font-size: 20px;
+
 }
+
 
 .aside{
     background: rgb(34,193,195);
@@ -19,12 +21,14 @@ body{
     flex-direction: column;     
     flex-wrap: wrap;     
     justify-content: flex-start;     
-    align-items: center;     
-    height: 130vh;     
+    align-items: center;
+    text-align: center;     
+    height: 213vh;     
     width: fit-content;        
     float:left;     
     color: white;
     font-size: 17px;
+
 }
 
 .aside img{
@@ -35,27 +39,19 @@ body{
 }
 
 .aside i:hover{
-    color: red;
+    color: white;
 }
 
 .icon1{
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    gap: 20px;
 }
 
 .icon1 i{
     font-size: 45px;
     padding: 10px;
 }
-
-
-/* .organization{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-} */
 
 .conteudo{
     width: 100%;
@@ -84,17 +80,62 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,45,45,0.453746
     border-radius: 20px;
 }
 
-#networking{
+.networking{
     background: rgb(34,193,195);
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,45,45,0.4537464644060749) 100%);
-    padding:100px;
+    padding: 100px;
     border-radius: 20px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
     
 }
 
-@media screen  and(max-width: 767px) {
+/* #cards{
+    display: flex;
+    align-items: center;
+} */
+
+.card{
+    background-color: #7b58af;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+    padding: 1%;
+    margin: 1% 1%;
+}
+
+.card img{
+    border-radius: 50%;
+    width: 100%;
+    padding: 10%;
+}
+
+.iconW{
+    background-color: green;
+    border-radius: 50%;
+    width: 40px;
+    position:fixed;
+    right: 10px;
+    bottom: 15px;
+}
+
+.iconW i{
+    font-size: 40px;
+    
+}
+
+.iconW i:hover{
+    color: white;
+}
+
+
+
+/* @media screen  and(max-width: 767px) {
     body {
         background-color: red;  
     }
     
-}
+} */

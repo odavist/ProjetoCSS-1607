@@ -112,7 +112,8 @@ body {
 
 
 .card {
-    background-color: #7b58af;
+    background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,0.9906337535014006) 0%, rgba(80,162,195,1) 20%, rgba(100,148,195,1) 26%, rgba(130,128,195,1) 38%, rgba(253,45,194,0.7497373949579832) 80%);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -129,11 +130,19 @@ body {
     padding: 10%;
 }
 
+.card i{
+    font-size: 30px;
+}
+
+.card i:hover{
+    color: white;
+}
+
 .iconW {
     background-color: green;
     border-radius: 50%;
-    width: 55px;
-    height: 55px;
+    width: 60px;
+    height: 60px;
     position: fixed;
     right: 10px;
     bottom: 15px;

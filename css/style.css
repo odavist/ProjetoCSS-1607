@@ -1,102 +1,118 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
 }
 
-body{
+body {
     background-color: #7b58af;
     background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23faf7ff' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     display: flex;
-    flex-direction: row;
-    font-size: 20px;
-
+    font-size: 21px;
+    font-family: sans-serif;
 }
 
-
-.aside{
-    background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,45,45,0.4537464644060749) 100%);
-    display: flex;     
-    flex-direction: column;     
-    flex-wrap: wrap;     
-    justify-content: flex-start;     
+.aside {
+    background: rgb(34, 193, 195);
+    background: linear-gradient(
+        0deg,
+        rgba(34, 193, 195, 1) 0%,
+        rgba(253, 45, 45, 0.4537464644060749) 100%
+    );
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     align-items: center;
-    text-align: center;     
-    height: 200vh;     
-    width: fit-content;        
-    float:left;     
+    text-align: center;
+    width: 27vw;
+    float: left;
     color: white;
     font-size: 17px;
+    position: fixed;
+    height: 100vh;
 
 }
 
-.aside img{
-    margin: 30px;
+.aside img {
     flex-wrap: wrap;
-    width: 250px;
+    width: 80%;
     border-radius: 50%;
 }
 
-.aside i:hover{
+.aside i:hover {
     color: white;
 }
 
-.icon1{
+.aside h1 {
+    padding: 20px;
+}
+
+.icon1 {
     display: flex;
     justify-content: space-between;
     padding: 10px;
 }
 
-.icon1 i{
+.icon1 i {
     font-size: 45px;
     padding: 10px;
 }
 
-.conteudo{
+.conteudo {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding: 30px;
     color: white;
+    gap: 20px;
+    margin-left: 27vw;
 }
 
-#informacoes{
-    background: rgb(34,193,195);
-background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,45,45,0.4537464644060749) 100%);
-    padding: 100px;
+#informacoes {
+    background: rgb(34, 193, 195);
+    background: linear-gradient(
+        0deg,
+        rgba(34, 193, 195, 1) 0%,
+        rgba(253, 45, 45, 0.4537464644060749) 100%
+    );
+
+    padding: 3%;
     border-radius: 20px;
 }
 
-#informacoes ul li{
+#informacoes ul li {
     list-style: none;
-}  
+}
 
-#trajetoria{
-    background: rgb(34,193,195);
-background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,45,45,0.4537464644060749) 100%);
-    padding: 100px;
+#trajetoria {
+    background: rgb(34, 193, 195);
+    background: linear-gradient(
+        0deg,
+        rgba(34, 193, 195, 1) 0%,
+        rgba(253, 45, 45, 0.4537464644060749) 100%
+    );
+    padding: 3%;
     border-radius: 20px;
 }
 
-.networking{
-    background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,45,45,0.4537464644060749) 100%);
-    padding: 100px;
+.networking {
+    background: rgb(34, 193, 195);
+    background: linear-gradient(
+        0deg,
+        rgba(34, 193, 195, 1) 0%,
+        rgba(253, 45, 45, 0.4537464644060749) 100%
+    );
+    padding: 3%;
     border-radius: 20px;
-    justify-content: space-between;
+    justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
-    
 }
 
-/* #cards{
-    display: flex;
-    align-items: center;
-} */
 
-.card{
+.card {
     background-color: #7b58af;
     border-radius: 20px;
     display: flex;
@@ -105,37 +121,61 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,45,45,0.453746
     align-items: center;
     padding: 1%;
     margin: 1% 1%;
+    min-width: 200px;
 }
 
-.card img{
+.card img {
     border-radius: 50%;
     width: 100%;
     padding: 10%;
 }
 
-.iconW{
+.iconW {
     background-color: green;
     border-radius: 50%;
-    width: 40px;
-    position:fixed;
+    width: 55px;
+    height: 55px;
+    position: fixed;
     right: 10px;
     bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.iconW i{
+.iconW i {
     font-size: 40px;
-    
 }
 
-.iconW i:hover{
+.iconW i:hover {
     color: white;
 }
 
-
-
-/* @media screen  and(max-width: 767px) {
+@media screen and (max-width: 900px) {
     body {
-        background-color: red;  
+        flex-direction: column;
+    }
+
+    .aside,
+    .conteudo {
+        width: 100%;
+    }
+
+    .aside{
+        position: static;
+        height: fit-content;
     }
     
-} */
+    .conteudo{
+        margin-left: 0;
+        padding: 30px;
+    }
+
+    .aside img{
+        width: 50%;
+    }
+
+    #informacoes, #trajetoria{
+        padding: 7%;
+    }
+}

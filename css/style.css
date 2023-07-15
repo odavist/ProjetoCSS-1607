@@ -15,10 +15,7 @@ body {
 .aside {
     background: rgb(34, 193, 195);
     background: linear-gradient(
-        0deg,
-        rgba(34, 193, 195, 1) 0%,
-        rgba(253, 45, 45, 0.4537464644060749) 100%
-    );
+        0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 45, 45, 0.4537464644060749) 100%);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -72,9 +69,7 @@ body {
 #informacoes {
     background: rgb(34, 193, 195);
     background: linear-gradient(
-        0deg,
-        rgba(34, 193, 195, 1) 0%,
-        rgba(253, 45, 45, 0.4537464644060749) 100%
+        0deg, rgba(34, 193, 195, 1) 0%,rgba(253, 45, 45, 0.4537464644060749) 100%
     );
 
     padding: 3%;
@@ -88,9 +83,7 @@ body {
 #trajetoria {
     background: rgb(34, 193, 195);
     background: linear-gradient(
-        0deg,
-        rgba(34, 193, 195, 1) 0%,
-        rgba(253, 45, 45, 0.4537464644060749) 100%
+        0deg,rgba(34, 193, 195, 1) 0%,rgba(253, 45, 45, 0.4537464644060749) 100%
     );
     padding: 3%;
     border-radius: 20px;
@@ -99,9 +92,7 @@ body {
 .networking {
     background: rgb(34, 193, 195);
     background: linear-gradient(
-        0deg,
-        rgba(34, 193, 195, 1) 0%,
-        rgba(253, 45, 45, 0.4537464644060749) 100%
+        0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 45, 45, 0.4537464644060749) 100%
     );
     padding: 3%;
     border-radius: 20px;
@@ -110,10 +101,16 @@ body {
     flex-wrap: wrap;
 }
 
-
 .card {
-    background: rgb(34,193,195);
-background: linear-gradient(0deg, rgba(34,193,195,0.9906337535014006) 0%, rgba(80,162,195,1) 20%, rgba(100,148,195,1) 26%, rgba(130,128,195,1) 38%, rgba(253,45,194,0.7497373949579832) 80%);
+    background: rgb(34, 193, 195);
+    background: linear-gradient(
+        0deg,
+        rgba(34, 193, 195, 0.9906337535014006) 0%,
+        rgba(80, 162, 195, 1) 20%,
+        rgba(100, 148, 195, 1) 26%,
+        rgba(130, 128, 195, 1) 38%,
+        rgba(253, 45, 194, 0.7497373949579832) 80%
+    );
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -130,11 +127,11 @@ background: linear-gradient(0deg, rgba(34,193,195,0.9906337535014006) 0%, rgba(8
     padding: 10%;
 }
 
-.card i{
+.card i {
     font-size: 30px;
 }
 
-.card i:hover{
+.card i:hover {
     color: white;
 }
 
@@ -169,21 +166,22 @@ background: linear-gradient(0deg, rgba(34,193,195,0.9906337535014006) 0%, rgba(8
         width: 100%;
     }
 
-    .aside{
+    .aside {
         position: static;
         height: fit-content;
     }
-    
-    .conteudo{
+
+    .conteudo {
         margin-left: 0;
         padding: 30px;
     }
 
-    .aside img{
+    .aside img {
         width: 50%;
     }
 
-    #informacoes, #trajetoria{
+    #informacoes,
+    #trajetoria {
         padding: 7%;
     }
 }
